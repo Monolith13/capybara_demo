@@ -22,7 +22,7 @@ This is demo project with capybara framework(test engine) + allure framework(rep
    sudo docker pull selenium/standalone-firefox
    sudo docker run -d -P selenium/standalone-firefox
    ```     
-6. Set your URL to **$host** variable in **env.rb**.
+6. Set your URL to **$host** variable in [env.rb](/feature/support/env.rb).
 7. Install [Allure commandline](https://docs.qameta.io/allure/latest/#_installing_a_commandline) 
 8. Launch shell script:
    ```
