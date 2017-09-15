@@ -1,0 +1,48 @@
+<qa:environment xmlns:qa="urn:model.commons.qatools.yandex.ru">
+    <name>Allure reporter</name>
+    <parameter>
+        <name>OS</name>
+        <key>OS version</key>
+        <value>1.0</value>
+    </parameter>
+    <parameter>
+        <name>RVM</name>
+        <key>RVM version</key>
+        <value>1.29.3</value>
+    </parameter>
+    <parameter>
+        <name>Ruby</name>
+        <key>Ruby version</key>
+        <value>2.3.5</value>
+    </parameter>
+    <parameter>
+        <name>Allure-ruby-adaptor-api</name>
+        <key>Allure-ruby-adaptor-api version</key>
+        <value>0.7.0</value>
+    </parameter>
+    <parameter>
+        <name>Cucumber</name>
+        <key>Cucumber version</key>
+        <value>2.4.0</value>
+    </parameter>
+    <parameter>
+        <name>Allure-cucumber</name>
+        <key>Allure-cucumber version</key>
+        <value>0.5.8</value>
+    </parameter>
+    <parameter>
+        <name>Capybara</name>
+        <key>Capybara version</key>
+        <value>2.15.1</value>
+    </parameter>
+    <parameter>
+        <name>Selenium</name>
+        <key>Selenium version</key>
+        <value>3.5.2</value>
+    </parameter>
+    <parameter>
+        <name>Bundler</name>
+        <key>Bundler version</key>
+        <value>1.15.4</value>
+    </parameter>
+</qa:environment>
