@@ -1,5 +1,5 @@
 # capybara_demo
-This is demo project with capybara framework(test engine) + allure framework(report) + cucumber (BDD). 
+This is demo project with Capybara framework(test engine) + allure framework(report) + cucumber (BDD). 
 
 ## How launch test 
 1. Install [RVM](https://rvm.io)
@@ -22,7 +22,7 @@ This is demo project with capybara framework(test engine) + allure framework(rep
    sudo docker pull selenium/standalone-firefox
    sudo docker run -d -P selenium/standalone-firefox
    ```     
-6. Set your URL to **$host** variable in [env.rb](/feature/support/env.rb).
+6. Set your URL to **$host** variable in [env.rb](https://github.com/Monolith13/capybara_demo/blob/master/feature/support/env.rb).
 7. Install [Allure commandline](https://docs.qameta.io/allure/latest/#_installing_a_commandline) 
 8. Launch shell script:
    ```

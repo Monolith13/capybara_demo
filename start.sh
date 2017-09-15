@@ -1,17 +1,17 @@
 #!/bin/bash --login
 export PATH
 
-# clear reports & screenshots
+# Clear reports & screenshots
 rm -rf allure && rm -rf allure-report && rm -rf screenshot/**
 
-# update dependence
+# Update dependence
 bundle update
 
-# start tests
+# Start tests
 bundle exec cucumber -v -f AllureCucumber::Formatter --tags @auth -r features/support -r features/step_definitions
 
-# copy environment.xml to report folder
+# Copy environment.xml to report folder
 cp ./environment.xml ./allure/environment.xml
 
-# generate report (disable for launch from CI)
+# Generate report (disable for launch from CI)
 allure generate -c ./allure
