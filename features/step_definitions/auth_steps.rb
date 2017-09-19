@@ -19,5 +19,8 @@ When (/^I fill "(.*)" in "(.*)"$/) do |text, field_name|
 end
 
 And (/^I make screenshot$/) do
-  Report.attach_screenshot(path)
+  time = Time.now.strftime("%Y-%m-%d %H%M")
+  path = './screenshot/' + time + ' - screenshot.png'
+  page.save_screenshot(path)
+  Report.attach_screenshot(path, time)
 end

@@ -1,12 +1,10 @@
 include AllureCucumber::DSL
 
 class Report
-  def self.attach_screenshot(path = 'screenshot')
+  def self.attach_screenshot(path, time)
     begin
-      time = Time.now.hour.to_s + ':' + Time.now.min.to_s + ':' + Time.now.sec.to_s
-      path = "screenshot/capybara_" + time + '.png'
-      save_and_open_screenshot(path) #TODO - change to true method without opening
-      attach_file('Screenshot', File.open(path))
+      name = 'Screenshot ' + time
+      attach_file(name, File.open(path))
     rescue
     end
   end
